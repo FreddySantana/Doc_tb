@@ -14,7 +14,6 @@ Descrição:
     técnicas de Machine Learning, Deep Reinforcement Learning, Natural Language
     Processing e Explainable AI.
 
-Licença: MIT
 """
 
 #!/usr/bin/env python3
