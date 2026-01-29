@@ -18,30 +18,30 @@ Camada de Explicabilidade:
 tb_framework_clean/
 ├── src/
 
-│   ├── preprocessing/     ✅ 5 módulos 
+│   ├── preprocessing/      5 módulos 
 
-│   ├── ml_models/         ✅ 7 módulos
+│   ├── ml_models/          7 módulos
 
-│   ├── drl/               ✅ 2 módulos 
+│   ├── drl/                2 módulos 
 
-│   ├── nlp/               ✅ 1 módulo
+│   ├── nlp/                1 módulo
 
-│   ├── xai/               ✅ 2 módulos
+│   ├── xai/                2 módulos
 
-│   ├── evaluation/        ✅ 2 módulos 
+│   ├── evaluation/         2 módulos 
 
-│   ├── ensemble/          ✅ 1 módulo
+│   ├── ensemble/           1 módulo
 
-│   └── utils/             ✅ Utilitários 
+│   └── utils/              Utilitários 
 
-├── data/                  ✅ Dataset TB
+├── data/                   Dataset TB
 
-├── results/               ✅ 21 arquivos
+├── results/                21 arquivos
 
-├── README.md              ✅ Atualizado
+├── README.md               Atualizado
 
-├── config.yaml            ✅ Configurações
+├── config.yaml             Configurações
 
-└── requirements.txt       ✅ Dependências
+└── requirements.txt        Dependências
 
 Comparações de modelos
