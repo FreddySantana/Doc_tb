@@ -1,14 +1,14 @@
-# Framework Multi-Paradigma para Predição de Abandono de Tratamento de Tuberculose
+Framework Multi-Paradigma para Predição de Abandono de Tratamento de Tuberculose
 
-**Autor:** Frederico  
-**Instituição:** Programa de Doutorado  
-**Período de Desenvolvimento:** Janeiro - Novembro 2025
+Autor: Frederico Santana 
+Instituição: Programa de Doutorado  
+Período de Desenvolvimento: Marco - Novembro 2025
 
-## Visão Geral
+Visão Geral
 
-Este repositório contém a implementação completa do framework multi-paradigma desenvolvido como parte da pesquisa de doutorado sobre predição de abandono de tratamento em pacientes com tuberculose. O framework integra três paradigmas complementares: **Machine Learning (ML)**, **Deep Reinforcement Learning (DRL)** e **Natural Language Processing (NLP)**, combinados através de um sistema de ensemble ponderado.
+Este repositório contém os arquivos principais  do framework desenvolvido como parte da pesquisa de doutorado sobre predição de abandono de tratamento em pacientes com tuberculose. O framework integra três paradigmas complementares: Machine Learning (ML), Deep Reinforcement Learning (DRL) e Natural Language Processing (NLP), combinados através de um sistema de ensemble ponderado.
 
-## Estrutura do Projeto
+Estrutura do Projeto
 
 ```
 tb_framework_clean/
@@ -53,75 +53,75 @@ tb_framework_clean/
 └── README.md                       # Este arquivo
 ```
 
-## Pipeline Completo
+Pipeline Completo
 
-### 1. Pré-processamento de Dados
+1. Pré-processamento de Dados
 
 O módulo de pré-processamento implementa técnicas avançadas para preparação dos dados:
 
-- **Tratamento de Valores Ausentes**: Imputação inteligente baseada em KNN e média/mediana
-- **Detecção de Outliers**: Identificação usando IQR e Z-score
-- **Análise de Correlação**: Remoção de features altamente correlacionadas
-- **Balanceamento de Classes**: SMOTE, undersampling e técnicas híbridas
+- Tratamento de Valores Ausentes: Imputação inteligente baseada em KNN e média/mediana
+- Detecção de Outliers: Identificação usando IQR e Z-score
+- Análise de Correlação: Remoção de features altamente correlacionadas
+- Balanceamento de Classes: SMOTE, undersampling e técnicas híbridas
 
-### 2. Modelos de Machine Learning
+2. Modelos de Machine Learning
 
-#### Modelos White Box (Interpretáveis)
-- **Regressão Logística**: Modelo linear interpretável com coeficientes explícitos
-- **Árvore de Decisão**: Modelo baseado em regras de fácil interpretação
+Modelos White Box (Interpretáveis)
+- Regressão Logística: Modelo linear interpretável com coeficientes explícitos
+- Árvore de Decisão: Modelo baseado em regras de fácil interpretação
 
-#### Modelos Black Box (Alta Performance)
-- **XGBoost**: Gradient Boosting otimizado com regularização
-- **LightGBM**: Gradient Boosting eficiente para grandes datasets
-- **CatBoost**: Gradient Boosting com tratamento nativo de categóricas
+Modelos Black Box (Alta Performance)
+- XGBoost: Gradient Boosting otimizado com regularização
+- LightGBM: Gradient Boosting eficiente para grandes datasets
+- CatBoost: Gradient Boosting com tratamento nativo de categóricas
 
-### 3. Deep Reinforcement Learning (DRL)
+3. Deep Reinforcement Learning (DRL)
 
 Implementação de agente DQN (Deep Q-Network) que aprende políticas de predição através de interação com ambiente simulado:
 
-- **Ambiente Customizado**: Modelagem do processo de tratamento de TB
-- **Agente DQN**: Rede neural profunda para aproximação de Q-values
-- **Treinamento**: Aprendizado por reforço com replay buffer
+- Ambiente Customizado: Modelagem do processo de tratamento de TB
+- Agente DQN: Rede neural profunda para aproximação de Q-values
+- Treinamento: Aprendizado por reforço com replay buffer
 
-### 4. Natural Language Processing (NLP)
+4. Natural Language Processing (NLP)
 
 Análise de textos clínicos e notas médicas para extração de features adicionais.
 
-### 5. Explainable AI (XAI)
+5. Explainable AI (XAI)
 
-#### SHAP (SHapley Additive exPlanations)
+SHAP (SHapley Additive exPlanations)
 - Análise global de importância de features
 - Contribuição individual de cada variável
 - Visualizações de dependência e interação
 
-#### LIME (Local Interpretable Model-agnostic Explanations)
+LIME (Local Interpretable Model-agnostic Explanations)
 - Explicações locais para predições individuais
 - Interpretação de casos específicos
 - Análise de sensibilidade
 
-### 6. Sistema de Ensemble
+6. Sistema de Ensemble
 
 Ensemble ponderado que combina três paradigmas:
 
-- **50% Machine Learning**: Média ponderada dos 5 modelos ML
-- **30% Deep Reinforcement Learning**: Predições do agente DQN
-- **20% Natural Language Processing**: Features extraídas de texto
+- 50% Machine Learning: Média ponderada dos 5 modelos ML
+- 30% Deep Reinforcement Learning: Predições do agente DQN
+- 20% Natural Language Processing: Features extraídas de texto
 
-## Principais Resultados
+ Principais Resultados
 
-### Performance do Ensemble
-- **F1-Score**: 0.82
-- **AUC**: 0.906
-- **Precision**: 0.79
-- **Recall**: 0.85
-- **Specificity**: 0.88
-- **Melhoria**: +6.5% em relação aos modelos individuais
+ Performance do Ensemble
+- F1-Score: 0.82
+- AUC: 0.906
+- Precision: 0.79
+- Recall: 0.85
+- Specificity: 0.88
+- Melhoria: +6.5% em relação aos modelos individuais
 
-### Fatores de Risco Identificados (SHAP)
-1. **HIV/AIDS** (+0.45): Principal fator de risco para abandono
-2. **Uso de Álcool** (+0.38): Segundo maior impacto
-3. **Situação de Rua** (+0.35): Terceiro fator mais relevante
-4. **Uso de Drogas** (+0.28): Quarto fator importante
+Fatores de Risco Identificados (SHAP)
+1. HIV/AIDS (+0.45): Principal fator de risco para abandono
+2. Uso de Álcool (+0.38): Segundo maior impacto
+3. Situação de Rua (+0.35): Terceiro fator mais relevante
+4. Uso de Drogas (+0.28): Quarto fator importante
 5. **Diabetes** (+0.22): Comorbidade relevante
 
 ### Comparação de Paradigmas
@@ -133,9 +133,9 @@ Ensemble ponderado que combina três paradigmas:
 | NLP | 0.68 | 0.831 | 0.66 | 0.70 |
 | **Ensemble 3P** | **0.82** | **0.906** | **0.79** | **0.85** |
 
-## Requisitos
+Requisitos
 
-### Dependências Python
+Dependências Python
 ```
 pandas>=1.5.0
 numpy>=1.23.0
@@ -190,71 +190,11 @@ agent = train_dqn_agent(X_train, y_train)
 
 O dataset utiliza registros de pacientes com tuberculose do sistema de saúde de São Paulo, período 2006-2016:
 
-- **Total de Registros**: ~50.000 pacientes
-- **Features**: 25 variáveis clínicas, demográficas e sociais
-- **Target**: Desfecho do tratamento (cura vs. abandono)
-- **Desbalanceamento**: ~15% abandono, ~85% cura
+- Total de Registros: ~100.000 pacientes
+- Features: 25 variáveis clínicas, demográficas e sociais
+- Target: Desfecho do tratamento (cura vs. abandono)
+- Desbalanceamento: ~15% abandono, ~85% cura
 
-### Principais Variáveis
-
-**Demográficas:**
-- Idade, Sexo, Raça/Cor
-
-**Clínicas:**
-- Tipo de TB (pulmonar, extrapulmonar)
-- Forma clínica
-- HIV/AIDS, Diabetes, Doenças mentais
-
-**Sociais:**
-- Situação de rua
-- Uso de álcool
-- Uso de drogas
-- Escolaridade
-
-## Resultados Gerados
-
-Todos os resultados são salvos automaticamente no diretório `results/`:
-
-### Métricas de Performance
-- Arquivos CSV com métricas detalhadas
-- Comparações entre modelos e paradigmas
-
-### Visualizações
-- Gráficos de comparação de performance
-- Curvas ROC e Precision-Recall
-- Matrizes de confusão
-
-### Explicações XAI
-- Importância global de features (SHAP)
-- Gráficos de dependência
-- Explicações locais (LIME)
-- Análises de casos individuais
-
-### Relatórios
-- Relatórios em Markdown com análises completas
-- Dados em JSON para processamento posterior
-
-## Contribuições Científicas
-
-Este framework contribui para a área de saúde pública através de:
-
-1. **Integração Multi-Paradigma**: Combinação inovadora de ML, DRL e NLP
-2. **Explicabilidade**: Uso extensivo de XAI para interpretação clínica
-3. **Performance Superior**: Melhoria significativa (+6.5%) em relação a abordagens tradicionais
-4. **Aplicabilidade Prática**: Identificação de fatores de risco acionáveis
-5. **Metodologia Replicável**: Pipeline completo documentado e reproduzível
-
-## Publicações
-
-Este trabalho resultou em publicações em conferências e periódicos da área de saúde pública e inteligência artificial aplicada.
-
-## Licença
-
-MIT License - Este projeto foi desenvolvido para fins acadêmicos e de pesquisa.
-
-## Contato
-
-Para questões sobre a implementação ou metodologia, entre em contato através do programa de doutorado.
 
 ---
 
