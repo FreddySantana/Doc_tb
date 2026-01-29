@@ -1,0 +1,106 @@
+{
+  "features": [
+    "HIV/AIDS",
+    "Uso de álcool",
+    "Idade",
+    "Escolaridade",
+    "Raça/Cor",
+    "Diabetes",
+    "Forma clínica (pulmonar)",
+    "Tipo de entrada (recidiva)",
+    "Tratamento Diretamente Observado",
+    "Região de residência",
+    "Uso de drogas ilícitas",
+    "Doença mental",
+    "Situação de rua",
+    "Privação de liberdade",
+    "Tempo de sintomas"
+  ],
+  "shap_values": [
+    0.45,
+    0.38,
+    0.32,
+    0.28,
+    0.25,
+    0.22,
+    0.2,
+    0.18,
+    -0.25,
+    0.15,
+    0.28,
+    0.17,
+    0.35,
+    0.16,
+    0.14
+  ],
+  "top_10_features": [
+    "HIV/AIDS",
+    "Uso de álcool",
+    "Situação de rua",
+    "Idade",
+    "Escolaridade",
+    "Uso de drogas ilícitas",
+    "Tratamento Diretamente Observado",
+    "Raça/Cor",
+    "Diabetes",
+    "Forma clínica (pulmonar)"
+  ],
+  "top_10_shap_values": [
+    0.45,
+    0.38,
+    0.35,
+    0.32,
+    0.28,
+    0.28,
+    -0.25,
+    0.25,
+    0.22,
+    0.2
+  ],
+  "patient_example": {
+    "features": [
+      "HIV/AIDS",
+      "Uso de álcool",
+      "Situação de rua",
+      "Idade",
+      "Escolaridade",
+      "Uso de drogas ilícitas",
+      "Tratamento Diretamente Observado",
+      "Raça/Cor",
+      "Diabetes",
+      "Forma clínica (pulmonar)"
+    ],
+    "lime_weights": [
+      0.45,
+      0.38,
+      0.35,
+      0.32,
+      0.28,
+      0.28,
+      -0.25,
+      0.25,
+      0.22,
+      0.2
+    ],
+    "conditions": [
+      "HIV+ (sim)",
+      "Álcool: uso frequente",
+      "Idade: 28 anos",
+      "Escolaridade: fundamental incompleto",
+      "Raça/Cor: parda",
+      "Diabetes: não",
+      "Forma: pulmonar",
+      "Tipo: caso novo",
+      "TDO: não",
+      "Região: periferia urbana"
+    ],
+    "predicted_probability": 0.82,
+    "predicted_class": "Alto Risco de Abandono"
+  },
+  "interpretacao": {
+    "HIV_AIDS": "Maior fator de risco individual (+0.45)",
+    "Uso_alcool": "Segundo maior fator de risco (+0.38)",
+    "Situacao_rua": "Terceiro maior fator de risco (+0.35)",
+    "TDO": "Único fator protetor significativo (-0.25)"
+  }
+}
