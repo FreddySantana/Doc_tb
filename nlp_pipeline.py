@@ -14,7 +14,7 @@ Descrição:
     completo de NLP, desde a geração de narrativas até a extração de features
     para integração com o ensemble multi-paradigma.
 
-Licença: MIT
+
 """
 
 import pandas as pd
