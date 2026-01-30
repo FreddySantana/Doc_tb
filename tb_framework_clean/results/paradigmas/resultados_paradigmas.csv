@@ -1,5 +1,0 @@
-Modelo,f1_score,auc,accuracy,precision,recall,interpretabilidade,ganho_sobre_melhor
-ML (LightGBM),0.77,0.87,0.85,0.75,0.79,0.4,
-DRL (PPO),0.75,0.85,0.83,0.73,0.77,0.7,
-NLP (BioBERT),0.74,0.82,0.81,0.72,0.76,0.75,
-Ensemble (ML+DRL+NLP),0.82,0.906,0.88,0.8,0.84,0.95,0.065
