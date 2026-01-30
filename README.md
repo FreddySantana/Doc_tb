@@ -14,17 +14,12 @@ Dados
 
 
 
- Arquitetura do Framework
-┌─────────────────────────────────────────────────────────────┐
-
-│                    TB-WEB-SP Dataset                        │
-
-│              (103.846 pacientes, 46 features)               │
-
-└────────────────────────┬────────────────────────────────────┘
-
-                         │
-                         
+              
+               Arquitetura do Framework
+                  
+                    TB-WEB-SP Dataset                       
+             (103.846 pacientes, 46 features)  
+                         │ 
          ┌───────────────┴───────────────┐
          
          │                               │
@@ -36,7 +31,6 @@ Dados
     │Estruturados                 │  Clínicas  │
     
     └────┬─────┘                  └─────┬──────┘
-    
          │                              │
     ┌────▼─────────────────────────────▼──────┐
     │  PRÉ-PROCESSAMENTO                      │
