@@ -415,30 +415,6 @@ $$U(x) = 0.6 \cdot U_{MC}(x) + 0.4 \cdot U_{ens}(x)$$
 | **McNemar** | $\chi^2 = \frac{(b-c)^2}{b+c}$ | [McNemar, 1947](https://doi.org/10.1007/BF02295996) |
 | **Bootstrap CI** | $CI = [\theta_{2.5\%}, \theta_{97.5\%}]$ | [Efron, 1979](https://doi.org/10.1214/aos/1176344552) |
 
----
-
-## 📊 Results
-
-### Performance Metrics
-
-| Metric | ML | DRL | NLP | Ensemble |
-|--------|----|----|-----|----------|
-| **F1-Score** | 0.81 | 0.78 | 0.72 | **0.85** |
-| **AUC-ROC** | 0.89 | 0.86 | 0.80 | **0.91** |
-| **Sensitivity** | 0.83 | 0.81 | 0.75 | **0.87** |
-| **Specificity** | 0.82 | 0.79 | 0.78 | **0.84** |
-| **MCC** | 0.58 | 0.52 | 0.45 | **0.65** |
-
-### Interpretability
-
-| Aspect | Status | Method |
-|--------|--------|--------|
-| **Feature Importance** | ✅ | SHAP + LIME |
-| **Uncertainty Quantified** | ✅ | MC Dropout + Ensemble Variance |
-| **Decision Explanations** | ✅ | SHAP Force Plots |
-| **Model Transparency** | ✅ | White-box comparison |
-
----
 
 ## 📚 References
 
