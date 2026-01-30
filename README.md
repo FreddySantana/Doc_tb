@@ -10,7 +10,7 @@
 
 **A comprehensive machine learning framework for predicting tuberculosis treatment abandonment using ML, DRL, NLP, and XAI**
 
-[📖 Documentation](#-documentation) • [🚀 Quick Start](#-quick-start) • [📊 Results](#-results) • [📚 References](#-references)
+[📖 Documentation](#-documentation) • [🚀 Quick Start](#-quick-start)  • [📚 References](#-references)
 
 </div>
 
