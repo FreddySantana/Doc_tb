@@ -8,13 +8,6 @@ Projeto: Framework Multi-Paradigma para Predição de Abandono de Tratamento de 
 Data de Criação: 2024-08-05
 Última Modificação: 2025-11-30
 
-Descrição:
-    Versão melhorada do gerador de narrativas que:
-    1. Remove aleatoriedade desnecessária (usa determinismo com seed)
-    2. Gera narrativas mais realistas e clinicamente apropriadas
-    3. Permite integração com dados reais quando disponíveis
-    4. Mantém consistência entre execuções
-
 Licença: MIT
 """
 
@@ -29,20 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 class ImprovedSyntheticNarrativeGenerator:
-    """
-    Gerador melhorado de narrativas clínicas sintéticas.
-    
-    Características:
-    - Determinístico (sem aleatoriedade desnecessária)
-    - Narrativas mais realistas e clinicamente apropriadas
-    - Suporta dados reais quando disponíveis
-    - Mantém rastreabilidade (seed-based)
-    
-    Attributes:
-        templates: Dicionário de templates de narrativas
-        output_dir: Diretório para salvar narrativas
-        use_real_data: Se True, usa dados reais quando disponíveis
-    """
+   
     
     def __init__(
         self,
