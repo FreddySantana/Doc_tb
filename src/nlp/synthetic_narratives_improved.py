@@ -1,5 +1,5 @@
 """
-Módulo Melhorado para Geração de Narrativas Clínicas Sintéticas
+Módulo para Geração de Narrativas Clínicas Sintéticas
 
 Autor: Frederico Guilheme Santana da Silva Filho
 Instituição: Programa de Doutorado em Engenharia Elétrica - UFPA
